@@ -1,0 +1,2 @@
+class FanGroup < ApplicationRecord
+end
