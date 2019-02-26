@@ -1,0 +1,9 @@
+<h2>Create a booking!</h2>
+
+<%= simple_form_for(@bookings) do |f| %>
+    <%= f.input :date %>
+    <%= f.input :time %>
+    <%= f.input :location %>
+    <%= f.button :submit, class: "btn-primary" %>
+<% end %>
+
