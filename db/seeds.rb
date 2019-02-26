@@ -21,4 +21,27 @@ puts 'Creating 10 fake entries...'
   fan_group.save!
 end
 
+puts 'Cleaning database...'
+Booking.destroy_all
+
+puts 'Creating restaurants...'
+bookings_attributes = [
+  {
+    time:         '1900',
+    date:         '26.02.2019',
+    location:     'Chicago',
+    user_id:      2,
+    fan_group_id  7,
+
+  },
+  {
+    time:         '2100',
+    date:         '28.02.2019',
+    location:     'Seattle',
+    user_id:      2,
+    fan_group_id  7,
+  }
+]
+Booking.create!(bookings_attributes)
+puts 'Finished!'
 

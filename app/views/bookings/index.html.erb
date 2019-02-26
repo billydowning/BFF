@@ -1,9 +1,14 @@
-<h2>Create a booking!</h2>
+<h2>These are all your bookings:</h2>
 
-<%= simple_form_for(@bookings) do |f| %>
-    <%= f.input :date %>
-    <%= f.input :time %>
-    <%= f.input :location %>
-    <%= f.button :submit, class: "btn-primary" %>
+<% current_user.bookings.each do |booking| %>
+    <li><%= link_to booking.location, user_booking_path(current_user, booking) %></li>
 <% end %>
+
+<br>
+
+
+
+<%= link_to "Create a new booking", new_user_booking_url %>
+
+
 
