@@ -1,0 +1,13 @@
+<h2>These are all your bookings:</h2>
+
+<% current_user.bookings.each do |booking| %>
+    <li><%= link_to booking.location, user_booking_path(current_user, booking) %></li>
+<% end %>
+
+<br>
+
+
+
+
+
+
