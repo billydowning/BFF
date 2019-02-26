@@ -1,3 +1,5 @@
 class FanGroupsController < ApplicationController
+
+
 end
 
