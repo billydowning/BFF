@@ -1,11 +1,11 @@
 class FanGroupsController < ApplicationController
 
   def index
-    @fan_groups = Fan_Group.all
+    @fan_groups = FanGroup.all
   end
 
   def show
-    @fan_group = Fan_Group.find(params[:id])
+    @fan_group = FanGroup.find(params[:id])
     @booking = Booking.new
   end
 
