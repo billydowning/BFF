@@ -11,9 +11,15 @@ class BookingsController < ApplicationController
   end
 
   def create
+    @fan_group = FanGroup.find(params[:fan_group_id])
     @booking = Booking.new(booking_params)
-    @booking.user = User.find(params[:user_id])
-    @booking.save
+    @booking.fan_group = @fan_group
+    @booking.user = current_user
+    if @booking.save
+      redirect_to user_booking_path(current_user, @booking)
+    else
+      render 'fan_groups/show'
+    end
   end
 
   private
