@@ -13,49 +13,25 @@
 
 <!-- container and cards banner here -->
 
-<!-- <div class="container">
-
-<ol class = "cards">
-<%# @fan_groups.each do |fan_group| %>
- <li><p> <%#= link_to fan_group.name, fan_group_path(fan_group) %>
-  <div class="image">
-  <%#= image_tag "#{fan_group.image}", alt: "alttext" %>
-  </div>
-<%# end %>
-</ol>
-
-</div>
- -->
-
-
-<!-- link -->
 
 <div class="container">
-<!--
   <div class="cards">
 
-    <ol>
-      <div class="card-trip"> -->
-        <div class="cards">
+    <% @fan_groups.each do |fan_group| %>
+    <div class="card-trip">
 
-          <% @fan_groups.each do |fan_group| %>
-          <div class="card-trip">
-
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
-            <div class="card-trip-infos">
-              <div>
-                <h2><%= fan_group.group_name %></h2>
-                <p> <%= fan_group.description %></p>
-              </div>
-              <h2 class="card-trip-pricing"> <p> € </p> <%= fan_group.price %>  </h2>
-            </div>
-          </div>
-          <% end %>
-
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= link_to fan_group.group_name, fan_group_path(fan_group) %> </h2>
+          <p> <%= fan_group.description %></p>
         </div>
-      <!-- </div>
-    </ol>
-  </div> -->
+        <h2 class="card-trip-pricing"> <p> € </p> <%= fan_group.price %>  </h2>
+      </div>
+    </div>
+    <% end %>
+
+  </div>
 </div>
 
 
