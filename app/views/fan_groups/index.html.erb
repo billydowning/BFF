@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>BEST <strong>F***ING</strong> COCKTAIL <strong>IN THE MOTHERF***ING</strong> WORLD!</h1>
+    <p>Change your life and learn to DRINK at one of our campuses around the world.</p>
+</div>
+
+<div class="container">
+
+<ol class = "cards">
+<% @fan_groups.each do |fan_group| %>
+ <li><p> <%= link_to fan_group.name, fan_group_path(fan_group) %>
+  <div class="image">
+  <%= image_tag "#{fan_group.image}", alt: "alttext" %>
+  </div>
+<% end %>
+</ol>
+
+</div>
+
+
+
+<!-- link -->
