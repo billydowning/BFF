@@ -6,8 +6,19 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-FanGroup.create(group_name: "Lorem ipsum dolor.", category: "Lorem ipsum dolor sit amet.", price: 5, size: 10, description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, esse.")
-FanGroup.create(group_name: "Lorem ipsum dolor.", category: "Lorem ipsum dolor sit amet.", price: 5, size: 10, description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, esse.")
-FanGroup.create(group_name: "Lorem ipsum dolor.", category: "Lorem ipsum dolor sit amet.", price: 5, size: 10, description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, esse.")
 
+
+require 'faker'
+
+puts 'Creating 10 fake entries...'
+10.times do
+  fan_group = FanGroup.new(
+    group_name:    Faker::RockBand.name,
+    category: Faker::Lorem.words(10),
+    price:  rand(0..5),
+    size:   rand(0..5),
+    description: Faker::Lorem.words(4)
+  )
+  fan_group.save!
+end
 
