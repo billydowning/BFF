@@ -14,10 +14,10 @@ puts 'Creating 10 fake entries...'
 10.times do
   fan_group = FanGroup.new(
     group_name:    Faker::RockBand.name,
-    category: Faker::Lorem.words(10),
+    category: Faker::Lorem.words(1),
     price:  rand(0..5),
     size:   rand(0..5),
-    description: Faker::Lorem.words(4)
+    description: Faker::WorldOfWarcraft.quote
   )
   fan_group.save!
 end
