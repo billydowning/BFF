@@ -1,0 +1,71 @@
+<!-- <div class="container">
+    <h1>BEST <strong>F***ING</strong> COCKTAIL <strong>IN THE MOTHERF***ING</strong> WORLD!</h1>
+    <p>Change your life and learn to DRINK at one of our campuses around the world.</p>
+</div> -->
+
+
+<!-- put the form for search criteria here -->
+
+
+
+
+
+
+<!-- container and cards banner here -->
+
+
+<div class="container">
+  <div class="cards">
+
+    <% @fan_groups.each do |fan_group| %>
+    <div class="card-trip">
+
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= link_to fan_group.group_name, fan_group_path(fan_group) %> </h2>
+          <p> <%= fan_group.description %></p>
+        </div>
+        <h2 class="card-trip-pricing"> <p> € </p> <%= fan_group.price %>  </h2>
+      </div>
+    </div>
+    <% end %>
+
+  </div>
+</div>
+
+
+<!--
+<div class="cards">
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+    Breakfast
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+    Lunch
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+    Dinner
+  </div>
+
+</div>
+ -->
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+      <form action="">
+        <#!-- Your form content
+      </form>
+    </div>
+  </div>
+</div>
+ #-->
+
+<!-- questions:
+how to put in specific picture for cards,  -->
+
+
+<%#= link_to fan_group.group_name, fan_group_path(fan_group)  %>
