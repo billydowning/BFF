@@ -1,7 +1,5 @@
-<div class="banner">
-  <div class="sign-up">
+<div class="sign-up">
 <h2>Log in</h2>
-<%= image_tag 'users', id:"sign-up-logo"  %>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
@@ -22,5 +20,4 @@
 
 <%= render "devise/shared/links" %>
 
-</div>
 </div>
