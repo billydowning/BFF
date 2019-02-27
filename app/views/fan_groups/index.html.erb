@@ -1,39 +1,40 @@
 
+
 <!-- put the form for search criteria here -->
 
 <div class="container" >
   <div class="grouped_dropdown">
 
-    <div class="form-group">
-      <label for="exampleSelectCity">City</label>
-      <select class="form-control" id="exampleSelectCity" required>
-        <option value="">Select your City</option>
-        <option value="en">Berlin</option>
-        <option value="de">London</option>
-        <option value="es">Madrid</option>
-        <option value="ru">Paris</option>
-      </select>
-    </div>
+    <form action="", method="get" class="form-group">
+      <div class="form-group">
+        <label for="exampleSelectCity">City</label>
+        <input type="text" name="city" id="city" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Filter">
+      </div>
+    </form>
 
     <div class="form-group">
       <label for="exampleSelectCategory">Category</label>
       <select class="form-control" id="exampleSelectCategory" required>
         <option value="">Select your Category</option>
-        <option value="en">Concert Hippies</option>
-        <option value="de">Stand-up Comedy</option>
-        <option value="es">Political Rally</option>
-        <option value="ru">Sport Fans</option>
+        <option value="CH">Concert Hippies</option>
+        <option value="SC">Stand-up Comedy</option>
+        <option value="PR">Political Rally</option>
+        <option value="SF">Sport Fans</option>
       </select>
     </div>
+
 
     <div class="form-group">
       <label for="exampleSelectPrice">Price</label>
       <select class="form-control" id="exampleSelectPrice" required>
         <option value="">Select your Price Range</option>
-        <option value="en"> €0 to €50</option>
-        <option value="de"> €51 to €100</option>
-        <option value="es"> €101 to €150</option>
-        <option value="ru"> €151 to €200</option>
+        <option value="cheap"> €0 to €50</option>
+        <option value="moderate"> €51 to €100</option>
+        <option value="premiu;"> €101 to €150</option>
+        <option value="luxe"> €151 to €200</option>
       </select>
     </div>
 
@@ -41,9 +42,9 @@
       <label for="exampleSelectGroupSize">Group Size</label>
       <select class="form-control" id="exampleSelectGroupSize" required>
         <option value="">Select your Group Size</option>
-        <option value="en">up to 10 peeps</option>
-        <option value="de">up to 30 peeps</option>
-        <option value="es">this is getting ridiculous (+30 peeps)</option>
+        <option value="10">up to 10 peeps</option>
+        <option value="30">up to 30 peeps</option>
+        <option value="+30">this is getting ridiculous (+30 peeps)</option>
       </select>
     </div>
   </div>
@@ -110,3 +111,14 @@ how to put in specific picture for cards,  -->
 
 
 <%#= link_to fan_group.group_name, fan_group_path(fan_group)  %>
+
+<!-- <div class="form-group">
+      <label for="exampleSelectCategory">Category</label>
+      <select class="form-control" id="exampleSelectCategory" required>
+        <option value="">Select your Category</option>
+        <option value="CH">Concert Hippies</option>
+        <option value="SC">Stand-up Comedy</option>
+        <option value="PR">Political Rally</option>
+        <option value="SF">Sport Fans</option>
+      </select>
+    </div> -->
