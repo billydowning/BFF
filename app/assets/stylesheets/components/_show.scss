@@ -1,0 +1,26 @@
+
+.profile {
+  background: white;
+  display: flex;
+  padding: 16px;
+}
+
+.profile-description {
+  background: white;
+  width: 30%;
+  margin: 8px;
+  text-align: center;
+  box-shadow: 16px;
+}
+
+.profile-picture {
+  background: white;
+  width: 70%;
+  margin: 8px;
+
+}
+
+.profile-picture > img {
+  max-width: 100%;
+
+}
