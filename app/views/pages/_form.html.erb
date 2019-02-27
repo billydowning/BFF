@@ -1,6 +1,11 @@
 <%= form_tag("fan_groups", method: :get, class: "search_engine") do %>
+
   <%= text_field_tag :city,
     params[:city],
+
+  <%= text_field_tag :query,
+    params[:query],
+
     class: "form-control",
     placeholder: "City"
   %>
