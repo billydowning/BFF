@@ -10,80 +10,69 @@ fake_attributes = [
     category:     'Concert Hippie',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'We will give you the best fan group you have ever seen. But no touching.',
-    location:     'London'
+    description:  'We will give you the best fan group you have ever seen. But no touching.'
   },
   {
     group_name:   'The Outrageous',
     category:     'Political Rally',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'We will even through stones if you wish.',
-    location:     'Madrid'
+    description:  'We will even through stones if you wish.'
   },
   {
     group_name:   'The sporties',
     category:     'Sport fans',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'We will beat the shit out of the other team. LOL. Just joking. Maybe not. We need the money.',
-    location:     'London'
+    description:  'We will beat the shit out of the other team. LOL. Just joking. Maybe not. We need the money.'
   },
   {
     group_name:   'Comcats',
     category:     'Stand-up comedy',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'friendly clapping guaranteed',
-    location:     'Paris'
-  },
+    description:  'friendly clapping guaranteed'  },
   {
     group_name:   'Polsters',
     category:     'Politcal Rally',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'If you want a revolution, we are up for it. Prices will vary.',
-    location:     'Berlin'
+    description:  'If you want a revolution, we are up for it. Prices will vary.'
   },
   {
     group_name:   'THE HIPSTERS',
     category:     'concert hippies',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'Que pasa. We drink. We celebrate. We like your music. We like you. No touching. LOL.',
-    location:     'Madrid'
+    description:  'Que pasa. We drink. We celebrate. We like your music. We like you. No touching. LOL.'
   },
   {
     group_name:   'Sportaneous',
     category:     'sport fans',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'Even if your team is shit we still make it feel valuable.',
-    location:     'London'
+    description:  'Even if your team is shit we still make it feel valuable.'
   },
   {
     group_name:   'Comedians',
     category:     'stand-up comedy',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'Nobody laughs about your jokes? Make a change with us. Feel good.',
-    location:     'Berlin'
+    description:  'Nobody laughs about your jokes? Make a change with us. Feel good.'
   },
   {
     group_name:   'Trupists',
     category:     'political rally',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'We will build you a wall even though its completely dump.',
-    location:     'Paris'
+    description:  'We will build you a wall even though its completely dump.'
   },
   {
     group_name:   'Not your usual hippie',
     category:     'concert hippies',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'We just like to have fun. Lol. We dont really care. We like Molly.',
-    location:     'London'
+    description:  'We just like to have fun. Lol. We dont really care. We like Molly.'
 
   }
 ]
