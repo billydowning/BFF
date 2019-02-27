@@ -1,7 +1,14 @@
 class FanGroupsController < ApplicationController
   def index
     @fan_groups = FanGroup.all
-  end
+    unless params[:city].blank?
+      @fan_groups = FanGroup.where(city: params[:city].capitalize)
+    end
+    # raise
+    # perform search code goes here
+  #   render ‘index’
+  # end
+end
 
   def show
     @fan_group = FanGroup.find(params[:id])
@@ -12,7 +19,7 @@ class FanGroupsController < ApplicationController
  private
 
   def params_fan_group
-    params.require(:fan_group).permit(:group_name, :category, :price, :size, :description)
+    params.require(:fan_groups).permit(:city, :group_name, :category, :price, :size, :description)
   end
 
 end

@@ -6,6 +6,7 @@ FanGroup.destroy_all
 
 fake_attributes = [
   {
+    city:         'Madrid',
     group_name:   'The ultimate fan group',
     category:     'Concert Hippie',
     price:        rand(50..200),
@@ -13,6 +14,7 @@ fake_attributes = [
     description:  'We will give you the best fan group you have ever seen. But no touching.'
   },
   {
+    city:         'London',
     group_name:   'The Outrageous',
     category:     'Political Rally',
     price:        rand(50..200),
@@ -20,6 +22,7 @@ fake_attributes = [
     description:  'We will even through stones if you wish.'
   },
   {
+    city:         'Berlin',
     group_name:   'The sporties',
     category:     'Sport fans',
     price:        rand(50..200),
@@ -27,12 +30,14 @@ fake_attributes = [
     description:  'We will beat the shit out of the other team. LOL. Just joking. Maybe not. We need the money.'
   },
   {
+    city:         'Berlin',
     group_name:   'Comcats',
     category:     'Stand-up comedy',
     price:        rand(50..200),
     size:         rand(1..5),
     description:  'friendly clapping guaranteed'  },
   {
+    city:         'Paris',
     group_name:   'Polsters',
     category:     'Politcal Rally',
     price:        rand(50..200),
@@ -40,6 +45,7 @@ fake_attributes = [
     description:  'If you want a revolution, we are up for it. Prices will vary.'
   },
   {
+    city:         'Madrid',
     group_name:   'THE HIPSTERS',
     category:     'concert hippies',
     price:        rand(50..200),
@@ -47,6 +53,7 @@ fake_attributes = [
     description:  'Que pasa. We drink. We celebrate. We like your music. We like you. No touching. LOL.'
   },
   {
+    city:         'Berlin',
     group_name:   'Sportaneous',
     category:     'sport fans',
     price:        rand(50..200),
@@ -54,6 +61,7 @@ fake_attributes = [
     description:  'Even if your team is shit we still make it feel valuable.'
   },
   {
+    city:         'Paris',
     group_name:   'Comedians',
     category:     'stand-up comedy',
     price:        rand(50..200),
@@ -61,6 +69,7 @@ fake_attributes = [
     description:  'Nobody laughs about your jokes? Make a change with us. Feel good.'
   },
   {
+    city:         'London',
     group_name:   'Trupists',
     category:     'political rally',
     price:        rand(50..200),
@@ -68,6 +77,7 @@ fake_attributes = [
     description:  'We will build you a wall even though its completely dump.'
   },
   {
+    city:         'Berlin',
     group_name:   'Not your usual hippie',
     category:     'concert hippies',
     price:        rand(50..200),
