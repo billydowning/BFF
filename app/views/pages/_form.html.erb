@@ -1,7 +1,17 @@
-<%= form_tag fan_groups_path, method: :get do %>
+<%= form_tag("fan_groups_path", method: :get, class: "search_engine") do %>
   <%= text_field_tag :query,
     params[:query],
     class: "form-control",
-    placeholder: "Find a fan"
+    placeholder: "City"
+  %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Up to how many fans"
+  %>
+   <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "What would you spend per hour"
   %>
 <% end %>
