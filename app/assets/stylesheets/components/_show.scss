@@ -11,7 +11,6 @@
   width: 30%;
   margin: 8px;
   text-align: center;
-  margin-top: 300px;
   text-align: left;
 }
 
@@ -25,4 +24,23 @@
 .profile-picture > img {
   max-width: 100%;
 
+}
+
+
+#new_booking {
+ width: 200px !important;
+ height: 0px;
+ text-align: left;
+ font-size: 15px;
+ label {font-weight: normal;}
+}
+
+@media only screen and (max-width: 500px) {
+  .profile-description {
+    width:100%;
+  }
+
+  .profile-picture {
+    width: 100%;
+  }
 }

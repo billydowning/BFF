@@ -1,24 +1,26 @@
 <div class="profile">
 
   <div class="profile-description">
-    <h1> <strong> <%= @fan_group.group_name %> </strong> </h1>
+    <h3> <strong> <%= @fan_group.group_name %> </strong> </h3>
 
-    <h4> Category: <%= @fan_group.category %> </h4>
+    <p> Category: <%= @fan_group.category %> </p>
 
-    <h4> Price: <%= @fan_group.price %>€ per booking</h4>
+    <p> Price: <%= @fan_group.price %>€ per booking</p>
 
-    <h4> Size of the group: <%= @fan_group.size %> </h4>
+    <p> Size of the group: <%= @fan_group.size %> </h4>
 
-    <h4> Description: "<i><%= @fan_group.description %>" </i> <h4>
+    <p> Description: "<i><%= @fan_group.description %>" </i> <p>
       <br>
-    <h3>Create a new booking:</h3>
+    <p> <strong> Create a new booking: </strong> </p>
 
+    <div class="form">
     <%= simple_form_for([@fan_group, @booking]) do |f| %>
     <%= f.input :date %>
     <%= f.input :time %>
     <%= f.input :location %>
     <%= f.submit "Submit a booking", class: "btn btn-primary" %>
       <% end %>
+    </div>
     </div>
 
     <div class="profile-picture">
