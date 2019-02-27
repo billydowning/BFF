@@ -1,7 +1,3 @@
-<div class="container"></div>
-
-<h1> Name: <%= @fan_group.group_name %> </h1>
-
 <div class="profile">
 
   <div class="profile-description">
@@ -14,23 +10,23 @@
     <h4> Size of the group: <%= @fan_group.size %> </h4>
 
     <p> Description: <%= @fan_group.description %> <p>
+    </div>
+
+    <div class="profile-picture">
+      <%= image_tag("LandingpageBanner.jpg", {}) %>
+    </div>
+
   </div>
 
-  <div class="profile-picture">
-    <%= image_tag("LandingpageBanner.jpg", {}) %>
-  </div>
-
-</div>
 
 
+  <h2>Create a new booking:</h2>
 
-<h2>Create a new booking:</h2>
+  <%= simple_form_for([@fan_group, @booking]) do |f| %>
+  <%= f.input :date %>
+  <%= f.input :time %>
+  <%= f.input :location %>
+  <%= f.submit "Submit a booking", class: "btn btn-primary" %>
 
-<%= simple_form_for([@fan_group, @booking]) do |f| %>
-<%= f.input :date %>
-<%= f.input :time %>
-<%= f.input :location %>
-<%= f.submit "Submit a booking", class: "btn btn-primary" %>
-
-<% end %>
+  <% end %>
 
