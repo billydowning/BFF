@@ -1,7 +1,11 @@
-<h2>Booking details:</h2>
+<div class="booking-container">
+<h2>WOOHOO!</h2>
+<h2>Your booking is <strong>Now Confirmed!</strong></h2>
 
+<h4>Here are the details of your booking:</h4>
 <h4> Location: <%= @booking.location %> </h4>
 <h4> Time: <%= @booking.time %> </h4>
 <h4> Date: <%= @booking.date %> </h4>
 
 <%= link_to "See all my bookings", user_bookings_path %>
+</div>
