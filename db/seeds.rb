@@ -4,7 +4,6 @@
 puts 'Cleaning the database...'
 FanGroup.destroy_all
 
-puts 'Creating 10 fake entries...'
 fake_attributes = [
   {
     group_name:   'The ultimate fan group',
@@ -85,6 +84,7 @@ fake_attributes = [
     size:         rand(1..5),
     description:  'We just like to have fun. Lol. We dont really care. We like Molly.',
     location:     'London'
+
   }
 ]
 FanGroup.create!(fake_attributes)
