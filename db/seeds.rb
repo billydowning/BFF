@@ -31,7 +31,7 @@ bookings_attributes = [
     date:         '26.02.2019',
     location:     'Chicago',
     user_id:      2,
-    fan_group_id  7,
+    fan_group_id:  7,
 
   },
   {
@@ -39,7 +39,7 @@ bookings_attributes = [
     date:         '28.02.2019',
     location:     'Seattle',
     user_id:      2,
-    fan_group_id  7,
+    fan_group_id:  7,
   }
 ]
 Booking.create!(bookings_attributes)
