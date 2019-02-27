@@ -1,32 +1,30 @@
 <div class="profile">
 
   <div class="profile-description">
-    <h1> Name: <%= @fan_group.group_name %> </h1>
+    <h1> <strong> <%= @fan_group.group_name %> </strong> </h1>
 
-    <h2> Category: <%= @fan_group.category %> </h2>
+    <h4> Category: <%= @fan_group.category %> </h4>
 
-    <h3> Price: <%= @fan_group.price %> $</h3>
+    <h4> Price: <%= @fan_group.price %>€ per booking</h4>
 
     <h4> Size of the group: <%= @fan_group.size %> </h4>
 
-    <p> Description: <%= @fan_group.description %> <p>
+    <h4> Description: "<i><%= @fan_group.description %>" </i> <h4>
+      <br>
+    <h3>Create a new booking:</h3>
+
+    <%= simple_form_for([@fan_group, @booking]) do |f| %>
+    <%= f.input :date %>
+    <%= f.input :time %>
+    <%= f.input :location %>
+    <%= f.submit "Submit a booking", class: "btn btn-primary" %>
+      <% end %>
     </div>
 
     <div class="profile-picture">
       <%= image_tag("LandingpageBanner.jpg", {}) %>
+
     </div>
 
   </div>
-
-
-
-  <h2>Create a new booking:</h2>
-
-  <%= simple_form_for([@fan_group, @booking]) do |f| %>
-  <%= f.input :date %>
-  <%= f.input :time %>
-  <%= f.input :location %>
-  <%= f.submit "Submit a booking", class: "btn btn-primary" %>
-
-  <% end %>
 
