@@ -6,13 +6,29 @@ class FanGroupsController < ApplicationController
   #   end
   # end
 
-  def index
-    @fan_groups = FanGroup.all
-    unless params[:city].blank?
-      sql_query = "city ILIKE :city AND category ILIKE :category AND price <= :price AND size <= :size "
-      @fan_groups = FanGroup.where(sql_query, city: params[:city].capitalize, category: params[:category], price: params[:price], size: params[:size])
+  # def index
+  #   @fan_groups = FanGroup.all
+  #   unless params[:city].blank?
+  #     sql_query = "city ILIKE :city AND category ILIKE :category AND price <= :price AND size <= :size "
+  #     @fan_groups = FanGroup.where(sql_query, city: params[:city].capitalize, category: params[:category], price: params[:price], size: params[:size])
+  #   end
+  # end
+
+    def index
+      @fan_groups
+      @fan_groups = FanGroup.where("city ILIKE :city", city: params[:city]) if params[:city]
+      @fan_groups = @fan_groups.where("price <= :price", price: params[:price]) if params[:price]
+      @fan_groups = @fan_groups.where("category ILIKE :category", category: params[:category]) if params[:category] != ''
+      @fan_groups = @fan_groups.where("size <= :size", size: params[:size]) if params[:size] != ''
     end
-  end
+
+
+  #   unless params[:city].blank?
+  #     sql_query = "city ILIKE :city AND category ILIKE :category AND price <= :price AND size <= :size "
+  #     @fan_groups = FanGroup.where(sql_query, city: params[:city].capitalize, category: params[:category], price: params[:price], size: params[:size])
+  #   end
+  # end
+
 
 
     # raise

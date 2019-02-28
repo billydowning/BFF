@@ -24,7 +24,7 @@ fake_attributes = [
   {
     city:         'Berlin',
     group_name:   'The sporties',
-    category:     'Sport fans',
+    category:     'Sport Fans',
     price:        rand(50..200),
     size:         rand(1..5),
     description:  'We will beat the shit out of the other team. LOL. Just joking. Maybe not. We need the money.'
@@ -32,7 +32,7 @@ fake_attributes = [
   {
     city:         'Berlin',
     group_name:   'Comcats',
-    category:     'Stand-up comedy',
+    category:     'Stand-up Comedy',
     price:        rand(50..200),
     size:         rand(1..5),
     description:  'friendly clapping guaranteed'  },
