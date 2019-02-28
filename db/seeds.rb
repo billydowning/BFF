@@ -8,7 +8,7 @@ fake_attributes = [
   {
     city:         'Madrid',
     group_name:   'The ultimate fan group',
-    category:     'Concert Hippie',
+    category:     'Concert Hippies',
     price:        rand(50..200),
     size:         rand(1..5),
     description:  'We will give you the best fan group you have ever seen. But no touching.'
@@ -47,7 +47,7 @@ fake_attributes = [
   {
     city:         'Madrid',
     group_name:   'THE HIPSTERS',
-    category:     'concert hippies',
+    category:     'Concert Hippies',
     price:        rand(50..200),
     size:         rand(1..5),
     description:  'Que pasa. We drink. We celebrate. We like your music. We like you. No touching. LOL.'
@@ -55,7 +55,7 @@ fake_attributes = [
   {
     city:         'Berlin',
     group_name:   'Sportaneous',
-    category:     'sport fans',
+    category:     'Sport Fans',
     price:        rand(50..200),
     size:         rand(1..5),
     description:  'Even if your team is shit we still make it feel valuable.'
@@ -63,7 +63,7 @@ fake_attributes = [
   {
     city:         'Paris',
     group_name:   'Comedians',
-    category:     'stand-up comedy',
+    category:     'Stand-up Comedy',
     price:        rand(50..200),
     size:         rand(1..5),
     description:  'Nobody laughs about your jokes? Make a change with us. Feel good.'
@@ -71,7 +71,7 @@ fake_attributes = [
   {
     city:         'London',
     group_name:   'Trupists',
-    category:     'political rally',
+    category:     'Political Rally',
     price:        rand(50..200),
     size:         rand(1..5),
     description:  'We will build you a wall even though its completely dump.'
@@ -79,7 +79,7 @@ fake_attributes = [
   {
     city:         'Berlin',
     group_name:   'Not your usual hippie',
-    category:     'concert hippies',
+    category:     'Concert Hippies',
     price:        rand(50..200),
     size:         rand(1..5),
     description:  'We just like to have fun. Lol. We dont really care. We like Molly.'
