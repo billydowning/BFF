@@ -10,16 +10,20 @@ class FanGroupsController < ApplicationController
   # end
 end
 
-  def show
-    @fan_group = FanGroup.find(params[:id])
-    @booking = Booking.new
-  end
+def show
+  @fan_group = FanGroup.find(params[:id])
+  @booking = Booking.new
+end
 
+#params for image upload
+def fan_group_params
+  params.require(:fan_group).permit(:photo)
+end
 
- private
+private
 
-  def params_fan_group
-    params.require(:fan_groups).permit(:city, :group_name, :category, :price, :size, :description)
-  end
+def params_fan_group
+  params.require(:fan_groups).permit(:city, :group_name, :category, :price, :size, :description, :photo)
+end
 
 end
