@@ -20,6 +20,13 @@ gem 'devise'
 gem 'pg_search'
 
 
+gem 'cloudinary', '~> 1.9.1'
+gem 'carrierwave', '~> 1.2'
+100
+
+gem 'algoliasearch-rails'
+
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end

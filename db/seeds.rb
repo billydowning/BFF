@@ -7,11 +7,17 @@ FanGroup.destroy_all
 fake_attributes = [
   {
     city:         'Madrid',
+
     group_name:   'The ultimate fan group',
     category:     'Concert Hippies',
+
+    group_name:   'ZWEETHEARTS',
+    category:     'Concert Hippie',
+
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'We will give you the best fan group you have ever seen. But no touching.'
+    description:  'We will give you the best fan group you have ever seen. But no touching.',
+    remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551362320/zweethearts.jpg"
   },
   {
     city:         'London',
@@ -19,7 +25,8 @@ fake_attributes = [
     category:     'Political Rally',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'We will even through stones if you wish.'
+    description:  'We will even through stones if you wish.',
+    remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551369878/outrageous.jpg"
   },
   {
     city:         'Berlin',
@@ -27,7 +34,9 @@ fake_attributes = [
     category:     'Sport Fans',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'We will beat the shit out of the other team. LOL. Just joking. Maybe not. We need the money.'
+    description:  'We will beat the shit out of the other team. LOL. Just joking. Maybe not. We need the money.',
+    remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551362320/sporties.jpg"
+
   },
   {
     city:         'Berlin',
@@ -35,14 +44,17 @@ fake_attributes = [
     category:     'Stand-up Comedy',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'friendly clapping guaranteed'  },
+    description:  'friendly clapping guaranteed',
+    remote_photo_url: "https://res.cloudinary.com/difmkiecj/image/upload/v1551362319/comcats.jpg"
+  },
   {
     city:         'Paris',
     group_name:   'Polsters',
     category:     'Politcal Rally',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'If you want a revolution, we are up for it. Prices will vary.'
+    description:  'If you want a revolution, we are up for it. Prices will vary.',
+    remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551369878/Polsters.jpg"
   },
   {
     city:         'Madrid',
@@ -50,7 +62,9 @@ fake_attributes = [
     category:     'Concert Hippies',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'Que pasa. We drink. We celebrate. We like your music. We like you. No touching. LOL.'
+    description:  'Que pasa. We drink. We celebrate. We like your music. We like you. No touching. LOL.',
+    remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551362320/hipster.jpg"
+
   },
   {
     city:         'Berlin',
@@ -58,15 +72,23 @@ fake_attributes = [
     category:     'Sport Fans',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'Even if your team is shit we still make it feel valuable.'
+    description:  'Even if your team is shit we still make it feel valuable.',
+    remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551362320/sportaneous.jpg"
+
   },
   {
     city:         'Paris',
+
     group_name:   'Comedians',
     category:     'Stand-up Comedy',
+
+    group_name:   'Beaufitul laugh',
+    category:     'stand-up comedy',
+
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'Nobody laughs about your jokes? Make a change with us. Feel good.'
+    description:  'Nobody laughs about your jokes? Make a change with us. Feel good.',
+    remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551370310/heidi-walley-770836-unsplash.jpg"
   },
   {
     city:         'London',
@@ -74,7 +96,9 @@ fake_attributes = [
     category:     'Political Rally',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'We will build you a wall even though its completely dump.'
+    description:  'We will build you a wall even though its completely dump.',
+    remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551369878/trump.jpg"
+
   },
   {
     city:         'Berlin',
@@ -82,13 +106,19 @@ fake_attributes = [
     category:     'Concert Hippies',
     price:        rand(50..200),
     size:         rand(1..5),
-    description:  'We just like to have fun. Lol. We dont really care. We like Molly.'
-
+    description:  'We just like to have fun. Lol. We dont really care. We like Molly.',
+    remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551369878/not_ur_usual_hipster.jpg"
   }
 ]
 FanGroup.create!(fake_attributes)
-
+puts 'adding photos'
 puts "Done!"
+
+
+
+
+
+
 
 
 #Seeds for bookings
