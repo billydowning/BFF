@@ -3,20 +3,10 @@
   <%= text_field_tag :city,
     params[:city],
     class: "form-control",
-    placeholder: "City"
-
+    placeholder: "Where are you?"
   %>
 
-  <%= text_field_tag :query_fan,
-    params[:query],
-    class: "form-control",
-    placeholder: "Up to how many fans"
-  %>
-   <%= text_field_tag :query_price,
-    params[:query],
-    class: "form-control",
-    placeholder: "What would you spend per hour"
-  %>
+
   <%= submit_tag(value = "Find A Group")
    %>
 <% end %>

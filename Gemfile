@@ -17,8 +17,13 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'devise'
+
 gem 'cloudinary', '~> 1.9.1'
 gem 'carrierwave', '~> 1.2'
+100
+
+gem 'algoliasearch-rails'
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'
