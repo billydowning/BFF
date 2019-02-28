@@ -3,22 +3,17 @@
 <!-- put the form for search criteria here -->
 
 <div class="container" >
-  <div class="grouped_dropdown">
 
-    <form action="/fan_groups" method="get" class="form-group">
-      <div class="form-group">
-        <label for="exampleSelectCity">City</label>
-        <input type="text" name="city" id="city" required>
-      </div>
-      <div class="form-group">
-        <input type="submit" value="Filter">
-      </div>
-    </form>
+  <form class="grouped_dropdown" action="/fan_groups" method="get">
+    <div class="form-group">
+      <label for="exampleSelectCity">City</label>
+      <input class="form-control" type="text" name="city" id="city" required class="form-group">
+    </div>
 
     <div class="form-group">
       <label for="exampleSelectCategory">Category</label>
       <select class="form-control" id="exampleSelectCategory" required>
-        <option value="">Select your Category</option>
+        <option value="">Select Category</option>
         <option value="CH">Concert Hippies</option>
         <option value="SC">Stand-up Comedy</option>
         <option value="PR">Political Rally</option>
@@ -30,7 +25,7 @@
     <div class="form-group">
       <label for="exampleSelectPrice">Price</label>
       <select class="form-control" id="exampleSelectPrice" required>
-        <option value="">Select your Price Range</option>
+        <option value="">Select Price Range</option>
         <option value="cheap"> €0 to €50</option>
         <option value="moderate"> €51 to €100</option>
         <option value="premiu;"> €101 to €150</option>
@@ -41,13 +36,17 @@
     <div class="form-group">
       <label for="exampleSelectGroupSize">Group Size</label>
       <select class="form-control" id="exampleSelectGroupSize" required>
-        <option value="">Select your Group Size</option>
+        <option value="">Select Group Size</option>
         <option value="10">up to 10 peeps</option>
         <option value="30">up to 30 peeps</option>
-        <option value="+30">this is getting ridiculous (+30 peeps)</option>
+        <option value="+30">this is getting ridiculous (+30)</option>
       </select>
     </div>
-  </div>
+
+    <div>
+      <button type="submit" class="adjustedbtn btn-primary">Never Walk Alone</button>
+    </div>
+  </form>
 </div>
 
 
