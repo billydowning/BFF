@@ -62,7 +62,8 @@
     <% @fan_groups.each do |fan_group| %>
     <div class="card-trip">
 
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+ <!--      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+  -->     <%= cl_image_tag(fan_group.photo)%>
       <div class="card-trip-infos">
         <div>
           <h2><%= link_to fan_group.group_name, fan_group_path(fan_group) %> </h2>
