@@ -15,7 +15,7 @@ fake_attributes = [
     category:     'Concert Hippie',
 
     price:        rand(50..200),
-    size:         rand(1..5),
+    size:         rand(1..35),
     description:  'We will give you the best fan group you have ever seen. But no touching.',
     remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551362320/zweethearts.jpg"
   },
@@ -24,7 +24,7 @@ fake_attributes = [
     group_name:   'The Outrageous',
     category:     'Political Rally',
     price:        rand(50..200),
-    size:         rand(1..5),
+    size:         rand(1..35),
     description:  'We will even through stones if you wish.',
     remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551369878/outrageous.jpg"
   },
@@ -33,7 +33,7 @@ fake_attributes = [
     group_name:   'The sporties',
     category:     'Sport Fans',
     price:        rand(50..200),
-    size:         rand(1..5),
+    size:         rand(1..35),
     description:  'We will beat the shit out of the other team. LOL. Just joking. Maybe not. We need the money.',
     remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551362320/sporties.jpg"
 
@@ -43,7 +43,7 @@ fake_attributes = [
     group_name:   'Comcats',
     category:     'Stand-up Comedy',
     price:        rand(50..200),
-    size:         rand(1..5),
+    size:         rand(1..35),
     description:  'friendly clapping guaranteed',
     remote_photo_url: "https://res.cloudinary.com/difmkiecj/image/upload/v1551362319/comcats.jpg"
   },
@@ -52,7 +52,7 @@ fake_attributes = [
     group_name:   'Polsters',
     category:     'Politcal Rally',
     price:        rand(50..200),
-    size:         rand(1..5),
+    size:         rand(1..35),
     description:  'If you want a revolution, we are up for it. Prices will vary.',
     remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551369878/Polsters.jpg"
   },
@@ -61,7 +61,7 @@ fake_attributes = [
     group_name:   'THE HIPSTERS',
     category:     'Concert Hippies',
     price:        rand(50..200),
-    size:         rand(1..5),
+    size:         rand(1..35),
     description:  'Que pasa. We drink. We celebrate. We like your music. We like you. No touching. LOL.',
     remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551362320/hipster.jpg"
 
@@ -71,7 +71,7 @@ fake_attributes = [
     group_name:   'Sportaneous',
     category:     'Sport Fans',
     price:        rand(50..200),
-    size:         rand(1..5),
+    size:         rand(1..35),
     description:  'Even if your team is shit we still make it feel valuable.',
     remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551362320/sportaneous.jpg"
 
@@ -86,7 +86,7 @@ fake_attributes = [
     category:     'stand-up comedy',
 
     price:        rand(50..200),
-    size:         rand(1..5),
+    size:         rand(1..35),
     description:  'Nobody laughs about your jokes? Make a change with us. Feel good.',
     remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551370310/heidi-walley-770836-unsplash.jpg"
   },
@@ -95,7 +95,7 @@ fake_attributes = [
     group_name:   'Trupists',
     category:     'Political Rally',
     price:        rand(50..200),
-    size:         rand(1..5),
+    size:         rand(1..35),
     description:  'We will build you a wall even though its completely dump.',
     remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551369878/trump.jpg"
 
@@ -105,7 +105,7 @@ fake_attributes = [
     group_name:   'Not your usual hippie',
     category:     'Concert Hippies',
     price:        rand(50..200),
-    size:         rand(1..5),
+    size:         rand(1..35),
     description:  'We just like to have fun. Lol. We dont really care. We like Molly.',
     remote_photo_url:"https://res.cloudinary.com/difmkiecj/image/upload/v1551369878/not_ur_usual_hipster.jpg"
   }
