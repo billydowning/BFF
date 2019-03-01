@@ -8,12 +8,12 @@
 
     <div class="form-group">
       <label for="exampleSelectCity">City</label>
-      <input class="form-control" type="text" name="city" id="city" required class="form-group">
+      <input value="<%= params[:city] %>"class="form-control" type="text" name="city" id="city" class="form-group">
     </div>
 
     <div class="form-group">
       <label for="exampleSelectPrice">Price</label>
-      <input class="form-control" type="text" name="price" id="price" required class="form-group">
+      <input class="form-control" type="text" name="price" id="price"  class="form-group" value="">
 <!--       <select class="form-control" id="exampleSelectPrice" required>
         <option value="">Select Price Range</option>
         <option value="50"> €0 to €50</option>
@@ -26,7 +26,7 @@
     <div class="form-group">
       <label for="exampleSelectCategory">Category</label>
       <select class="form-control" id="exampleSelectCategory"  name="category">
-        <option value= ''>Select Category</option>
+        <option value="">Select Category</option>
         <option value="Concert Hippies">Concert Hippies</option>
         <option value="Stand-up Comedy">Stand-up Comedy</option>
         <option value="Political Rally">Political Rally</option>
@@ -59,7 +59,7 @@
 <div class="container">
   <div class="cards">
 
-    <% @fan_groups.each do |fan_group| %>
+    <% @fan_groups.each do |fan_group|  %>
     <div class="card-trip">
 
       <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
