@@ -2,7 +2,7 @@
 
   <%= text_field_tag :city,
     params[:city],
-    class: "form-control",
+    class: "form-control", id: "booking_address",
     placeholder: "Where are you?"
   %>
 
@@ -10,3 +10,5 @@
   <%= submit_tag(value = "Find A Group")
    %>
 <% end %>
+
+<%= javascript_pack_tag "autocomplete_pack" %>
