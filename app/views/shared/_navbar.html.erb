@@ -39,7 +39,7 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-    <button id="button-landing"> <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %></button>
+    <div id="button"> <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %></div>
     <% end %>
   </div>
 

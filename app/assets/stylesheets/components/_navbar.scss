@@ -1,13 +1,14 @@
 /* Main navbar */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: grey;
+  background: transparent;
   transition: all 0.3s ease;
   height: 70px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: black;
 }
 
 /* Logo */
@@ -27,6 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: black;
 }
 
 /* Basic navbar item */
@@ -37,7 +39,7 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: white;
+  color: black;
   font-size: 18px;
 }
 .navbar-wagon-link:hover {
@@ -78,4 +80,31 @@
 
 #button-landing{
   background-color: green;
+}
+
+#button {
+  background-color: #469AE0; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+#button:hover {
+  background-color: #4CAF50;
+  color: black;
 }
